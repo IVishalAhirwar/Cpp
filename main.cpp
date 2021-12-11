@@ -9,7 +9,7 @@ void PlusMinus(int *arr, short int &size)
         if (arr[i] == 0)
         {
             ++zeros;
-        }
+        }   
         else if (arr[i] > 0)
         {
             ++positive;
