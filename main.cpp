@@ -7,7 +7,13 @@ void print(T t)
 int main(void)
 {
     const int a{90}, &b{a};
+    int& ref{a};
+    //can't do that : ERROR
 
+    const int& refo{a};
+    //yeah this will work fine
+
+    
     int *const read_only_address{&b};
     // location is not const only variable is const
 
